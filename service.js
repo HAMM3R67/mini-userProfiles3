@@ -25,8 +25,7 @@ app.service('mainService', function($http, $q) {
   //  $.ajax({
   //    method: 'GET'
   //    url: 'http://reqr.es/api/users?page=1'
-      //})
-  //})
+  // })
     
   }
 
