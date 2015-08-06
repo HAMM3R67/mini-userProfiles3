@@ -8,7 +8,8 @@ app.service('mainService', function($http, $q) {
         method: 'GET',
         url: 'http://reqr.es/api/users?page=1'
     }).then(function(response){
-      deferred.reseolve(response)
+      var parsedResponse = response.data.data
+      deferred.resolve(parsedResponse)
     })
     return deferred.promise;
   }
